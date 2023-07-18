@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class UIMainScene : MonoBehaviour
 {
     public static UIMainScene Instance { get; private set; }
-    
+    [SerializeField]
+    GameObject tranporter;
+
     public interface IUIInfoContent
     {
         string GetName();
@@ -72,5 +74,11 @@ public class UIMainScene : MonoBehaviour
             m_CurrentContent = content;
             InfoPopup.Name.text = content.GetName();
         }
+    }
+
+    public void LoadMenu()
+    {
+        
+        SceneManager.LoadScene(0);
     }
 }
