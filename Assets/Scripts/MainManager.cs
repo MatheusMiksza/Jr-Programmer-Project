@@ -6,7 +6,7 @@ using UnityEngine;
 public class MainManager : MonoBehaviour
 {
 
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set;  }
 
     public Color teamColor;
     public Color saveColor;

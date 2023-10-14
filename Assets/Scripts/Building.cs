@@ -15,6 +15,7 @@ public abstract class Building : MonoBehaviour,
     {
         public string ResourceId;
         public int Count;
+
     }
 
     [Tooltip("-1 is infinite")]

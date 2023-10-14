@@ -17,6 +17,7 @@ public class TransporterUnit : Unit
     {
         base.GoTo(position);
         m_CurrentTransportTarget = null;
+        
     }
     
     protected override void BuildingInRange()
